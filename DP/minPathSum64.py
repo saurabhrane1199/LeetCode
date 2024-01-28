@@ -2,6 +2,11 @@
 
 # Note: You can only move either down or right at any point in time.
 
+"""
+The trick her is to understand what path will lead to optimal solution, here the optimal choice would be the minimum between left and top
+
+"""
+
 class Solution:
     def minPathSum(self, grid: List[List[int]]) -> int:
         dp = [[0]*len(grid[0])]*len(grid)
