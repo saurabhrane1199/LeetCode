@@ -2,6 +2,7 @@ import collections
 import heapq
 class Solution:
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
+        
         mdist = lambda p1, p2 : abs(p1[0]-p2[0])+abs(p1[1]-p2[1])
         n, c = len(points), collections.defaultdict(list)
         
